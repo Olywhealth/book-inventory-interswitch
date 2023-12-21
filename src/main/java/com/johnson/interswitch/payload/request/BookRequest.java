@@ -17,6 +17,7 @@ public record BookRequest(
         @Pattern(regexp = "\\p{L}{2,}", message = "Author must contain at least two letters")
         String author,
         @Pattern(regexp = "\\d{4}", message = "Year of publication must be four digits")
-        String yearOfPublication
+        String yearOfPublication,
+        Double price
 ) {
 }

@@ -13,4 +13,13 @@ public class CheckoutResponse {
 
   private List<Book> orderedBooks = new ArrayList<>();
   private double payableAmount;
+
+  public double getPayableAmount() {
+    return getOrderedBooks().stream()
+            .mapToDouble(Book::getPrice).sum();
+  }
+
+  public List<Book> getOrderedBooks() {
+    return orderedBooks;
+  }
 }

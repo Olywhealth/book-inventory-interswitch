@@ -1,6 +1,7 @@
 package com.johnson.interswitch.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.johnson.interswitch.enums.Genre;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -26,6 +27,7 @@ public class Book {
   @JoinColumn(name = "cart_id", referencedColumnName = "id")
   @ManyToOne(fetch = FetchType.LAZY)
   @JsonBackReference
+  @JsonIgnore
   private UserCart cart;
 
 }

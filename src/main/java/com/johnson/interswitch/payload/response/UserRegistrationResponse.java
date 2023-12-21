@@ -14,7 +14,6 @@ public class UserRegistrationResponse {
     private String name;
     private String email;
     private String phoneNumber;
-    private String password;
     private LocalDateTime createdAt;
 
     public static UserRegistrationResponse convertUser(User user) {

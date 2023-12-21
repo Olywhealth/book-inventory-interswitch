@@ -24,7 +24,6 @@ public class User {
     private String name;
     private String email;
     private String phoneNumber;
-
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     @JsonManagedReference
     private UserCart cart;
