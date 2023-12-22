@@ -43,10 +43,9 @@ public class CartServiceImpl implements CartService{
         List<Book> cartBooks = userCart.getBooks();
         CheckoutResponse response = new CheckoutResponse();
         response.setOrderedBooks(cartBooks);
-        transaction.setCart(userCart);
+        transaction.setBookList(cartBooks);
         transaction.setUser(cartOwner.get());
         transaction.setAmount(response.getPayableAmount());
-        transaction.setMessage("Order successfully made by "+userId);
         transaction.setCreatedAt(LocalDateTime.now());
         transactionRepository.save(transaction);
         cartRepository.deleteAll();

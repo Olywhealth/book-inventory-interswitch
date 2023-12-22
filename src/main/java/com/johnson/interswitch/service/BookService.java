@@ -2,7 +2,6 @@ package com.johnson.interswitch.service;
 
 import com.johnson.interswitch.model.Book;
 import com.johnson.interswitch.payload.request.BookRequest;
-import com.johnson.interswitch.payload.response.GenericResponse;
 
 import java.util.List;
 
