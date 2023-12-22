@@ -22,7 +22,7 @@ Users can search for books based on various criteria, including title, author, y
 Implement a shopping cart that allows users to add books.
 Users can view the contents of the shopping cart.
 
- ###Checkout
+ ### Checkout
 Provide options for checkout with Web, USSD, and Transfer payment options.
 The checkout process does not involve payment gateway integration but simulates the payment process.
 
